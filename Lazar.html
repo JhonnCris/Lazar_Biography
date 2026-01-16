@@ -5,50 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My portfolio</title>
 </head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: large;
+        background-image: url("image/background2.0.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+    }
+    .container {
+        background-color: rgba(255, 255, 255, 0.85);
+        padding: 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+    .layout {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .menu {
+        min-width: 150px;
+        background-color: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .menu h3 {
+        margin-top: 0;
+        color: white;
+    }
+
+    .menu ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .menu li {
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu a:hover {
+        text-decoration: underline;
+    }
+
+    .content {
+        flex: 1;
+    }
+</style>
 <body>
-    <div class="cointainer"> 
-        <center><h1>Jhonn's Diary </h1>
-        
-        <h2>A diary of myself</h2>
-        
-        <hr>
-            <img src="image/Screenshot 2025-10-05 130820.png" alt="My Image" width="1000" height="800">
-        </center>
-        
-
-        <div>
-            <h2>My personal life</h2>
-            <p>My name is Jhonn Crisler C. Lazar and I'm currently 20 years old. I live in Matina Crossing Davao City. I am currently 
-                studying web development in order to upskill my skillset.
-            </p>
-            <hr>
-        </div>
-        <div>
-            <h2>My experiences</h2>
-            <ul>
-                <li>studying</li>
-                <li>reading books </li>
-
-            </ul>
-            <br>
-            <div>
-                <h2>Daily Routine</h2>
-                <ol>
-                    <li>4:00 AM - I wake up and stare at nothingness</li>
-                    <li>4-30 AM - I start cooking for our breakfast</li>
-                    <li>5:00 AM - I eat breakfast</li>
-                    <li>5:30 - I walk to go to school</li>
+    <div class="container"> 
+        <div class="layout">
+            <div class="menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#diary">Diary</a></li>
+                    <li><a href="#hobbies">Hobbies</a></li>
+                </ul>   
             </div>
-            <h4>My Line</h4>
-            <p>
-                <em>"Matulog sako"</em>
-
-            </p>
-            <h5>Contact Information</h5>
-            <p>You can visit me on my Github Account:</p>
-            <p class="center">
-                <a href="https://github.com/JhonnCris/MyPortfolio">Github Profile</a>
+            
+            <div style="flex: 1;">
+                <center>
+                    <h1>Jhonn's Diary</h1>
+                    <h2>A diary of myself</h2>
+                    <hr>
+                </center>
+            </div>
+        </div>
+        
+        <div class="layout">
+            
+            <div class="content">
+                <div>
+                    <h2>My personal life</h2>
+                    <p>My name is Jhonn Crisler C. Lazar and I'm currently 20 years old. I live in Matina Crossing Davao City. I am currently 
+                        studying web development in order to upskill my skillset.
+                    </p>
+                    <hr>
+                </div>
+                
+                <div>
+                    <h2>My experiences</h2>
+                    <ul>
+                        <li>studying</li>
+                        <li>reading books</li>
+                    </ul>
+                    <br>
+                </div>
+                
+                <div>
+                    <h2>Daily Routine</h2>
+                    <ol>
+                        <li>4:00 AM - I wake up and stare at nothingness</li>
+                        <li>4:30 AM - I start cooking for our breakfast</li>
+                        <li>5:00 AM - I eat breakfast</li>
+                        <li>5:30 AM - I walk to go to school</li>
+                    </ol>
+                </div>
+                
+                <h4>My Line</h4>
+                <p>
+                    <em>"Matulog sako"</em>
                 </p>
+                
+                <h5>Contact Information</h5>
+                <p>You can visit me on my Github Account:</p>
+                <p class="center">
+                    <a href="https://github.com/JhonnCris/MyPortfolio">Github Profile</a>
+                </p>
+                <h6>Hellooo</h6>
+            </div>
         </div>
     </div>
 </body>
